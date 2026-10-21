@@ -4,6 +4,44 @@ A single-mode IMX462 sensor plugin for **RDK X5, 1920 × 1080, 20 fps, RAW12 RGG
 
 The plugin runs in user space through D-Robotics `libcam`. It uses the board's existing camera kernel drivers and ISP runtime. It is not a replacement kernel driver, ISP engine, or complete RTSP application.
 
+## Download v0.1.0 and verify SHA-256
+
+Download the reviewed public snapshot from the [v0.1.0 release](https://github.com/jayleesin/rdk-x5-imx462/releases/tag/v0.1.0):
+
+- [rdk-x5-imx462-public.zip](https://github.com/jayleesin/rdk-x5-imx462/releases/download/v0.1.0/rdk-x5-imx462-public.zip)
+- [rdk-x5-imx462-public.zip.sha256](https://github.com/jayleesin/rdk-x5-imx462/releases/download/v0.1.0/rdk-x5-imx462-public.zip.sha256)
+
+Save both files in the same directory and verify the ZIP before extracting it.
+
+### Linux
+
+```sh
+curl -fL -o rdk-x5-imx462-public.zip \
+  https://github.com/jayleesin/rdk-x5-imx462/releases/download/v0.1.0/rdk-x5-imx462-public.zip
+curl -fL -o rdk-x5-imx462-public.zip.sha256 \
+  https://github.com/jayleesin/rdk-x5-imx462/releases/download/v0.1.0/rdk-x5-imx462-public.zip.sha256
+sha256sum -c rdk-x5-imx462-public.zip.sha256
+```
+
+### Windows PowerShell
+
+Download both files using the links above, then open PowerShell in their directory:
+
+```powershell
+$expectedHash = ((Get-Content -LiteralPath '.\rdk-x5-imx462-public.zip.sha256' -Raw).Trim() -split '\s+')[0]
+$actualHash = (Get-FileHash -LiteralPath '.\rdk-x5-imx462-public.zip' -Algorithm SHA256).Hash
+if ($actualHash -ine $expectedHash) { throw 'SHA-256 verification failed.' }
+'rdk-x5-imx462-public.zip: OK'
+```
+
+Successful verification prints `rdk-x5-imx462-public.zip: OK`. If it fails, download both files again and verify them before use. The expected ZIP SHA-256 is:
+
+```text
+cc234738d9d405b15b5a83e8fe14944213b5c76c0ed8eab40f28f32070a586b6
+```
+
+This checksum applies to the attached `rdk-x5-imx462-public.zip` asset, not GitHub's automatically generated **Source code (zip)** archive. The v0.1.0 archive remains the snapshot at commit `74dd27e`; `main` may contain later documentation updates. After extraction, run `python3 scripts/verify_public_release.py` inside the extracted directory to check its internal file manifest.
+
 ## Analysis provenance and REA usage
 
 This port was developed through analysis of the CM4 `imx290.ko` module, comparison with the pinned Raspberry Pi IMX290/462 driver source, and implementation and testing on RDK X5. **REA 6.7.0 was used in this workflow for ELF artifact identification and integrity verification.**
