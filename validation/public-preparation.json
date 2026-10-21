@@ -1,0 +1,49 @@
+{
+  "checked_utc": "2026-10-21T00:23:30.961396+00:00",
+  "status": "PASS",
+  "scope": "Source/recipe preparation checks; no new stream or color test",
+  "recipes": [
+    {
+      "tool": "make_isp_profile.py",
+      "exact_output_sha256": "c181a87162b9f111be28e445dd16db25bd1c9c13d49ce461f5fc93574648b579",
+      "reproduced_reference": true,
+      "refuses_existing_output_without_modification": true,
+      "refuses_unexpected_baseline_without_creating_output": true
+    },
+    {
+      "tool": "make_pipeline_config.py",
+      "exact_output_sha256": "ff3ca550a43cb45ff6de487d304621a7934674cb3d2a38fc1bdd320ab301c336",
+      "reproduced_reference": true,
+      "refuses_existing_output_without_modification": true,
+      "refuses_unexpected_baseline_without_creating_output": true
+    }
+  ],
+  "python_syntax": "PASS",
+  "readme_language": "English",
+  "native_x5_build": {
+    "exit_code": 0,
+    "rebuilt_sha256": "38e3e8ffcfc0ac376e5e30b6223fddaac29047eada49a963b7edfb5dfaad372d",
+    "matches_installed_reference_binary": true,
+    "abi_metadata_output": "imx462 module=304/304 info=384/384 data=0 version=00010000 flags=00000021"
+  },
+  "generated_pipeline_compiles_with_warnings_as_errors": true,
+  "production_files_unchanged": true,
+  "four_production_services_unchanged_active_enabled": true,
+  "production_service_restart_counts": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardware_callbacks_invoked": false,
+  "production_installation_performed": false,
+  "temporary_build_directory_removed": true,
+  "binary_and_vendor_derived_outputs_in_public_release": false,
+  "generated_outputs_redistribution_clearance": "Not established; local test only",
+  "release_verifier_negative_tests": [
+    "Unreachable ELF blob rejected",
+    "Unreachable exact vendor-derived ISP JSON blob rejected",
+    "Modified public working file rejected",
+    "Stale Git index rejected after working manifest update"
+  ]
+}

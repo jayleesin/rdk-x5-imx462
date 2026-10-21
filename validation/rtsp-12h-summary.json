@@ -1,0 +1,157 @@
+{
+  "kind": "Summary of a prior private full-system RTSP test; vendor runtime and test artifacts are not distributed.",
+  "source_report_sha256": "4871d6773d44b939f09876e6a4ea534a714ce3eddf1e5fefceb1c5c6e8c21298",
+  "audit_status": "REVIEWED",
+  "stream_verdict": "PASS",
+  "stream_issues": {},
+  "test_date_UTC": "2026-10-20",
+  "ffmpeg_version": "2026-04-09-git-d3d0b7a5ee-full_build-www.gyan.dev",
+  "transport": "RTSP/TCP; one LAN PC",
+  "wire": {
+    "verdict": "PASS",
+    "issues": {},
+    "decoded_frames": 864021,
+    "source_seconds": 43201.084034808,
+    "PC_observation_seconds": 43201.15604710003,
+    "source_fps": 19.99996109597253,
+    "raw_RTP_packets": 23793235,
+    "wire_AUs": 864028,
+    "RTP_timestamp_wraps": 1,
+    "decoded_pts_delta_min": 4463,
+    "decoded_pts_delta_max": 4537,
+    "sensor_delta_ns_min": 49589792,
+    "sensor_delta_ns_max": 50407708,
+    "initial_frames_excluded": 0,
+    "first_decoder_PTS": 0
+  },
+  "device_result": {
+    "verdict": "PASS",
+    "started_utc": "2026-10-20T08:34:59.534366+00:00",
+    "completed_utc": "2026-10-20T20:35:27.221069+00:00",
+    "wall_seconds": 43227.686808310005,
+    "samples": 1442,
+    "issues": {},
+    "exception": null,
+    "meaning": "Telemetry only; duration and LAN coverage require independent final audit"
+  },
+  "service_restarts": 0,
+  "health_recoveries": 0,
+  "sample_count": 1442,
+  "max_telemetry_gap_s": 30.113008835000073,
+  "temperatures": {
+    "thermal-ddr": {
+      "min_C": 73.969,
+      "max_C": 78.171,
+      "first_C": 76.021,
+      "last_C": 74.702,
+      "first30m_mean_C": 75.32826666666666,
+      "last30m_mean_C": 74.21777049180328
+    },
+    "thermal-cpu": {
+      "min_C": 72.895,
+      "max_C": 77.926,
+      "first_C": 75.093,
+      "last_C": 74.067,
+      "first30m_mean_C": 74.20968333333332,
+      "last30m_mean_C": 73.11003278688526
+    }
+  },
+  "memory_assessment": "No sustained service-memory-leak signature observed during the finite 12-hour window; not proof of absence of all leaks.",
+  "initial_and_last_30m_memory": {
+    "imx462-camera.service": {
+      "Rss": {
+        "first_0_to_30m_median_MiB": 27.5,
+        "last_30m_median_MiB": 28.546875,
+        "delta_MiB": 1.046875
+      },
+      "Pss": {
+        "first_0_to_30m_median_MiB": 16.458984375,
+        "last_30m_median_MiB": 17.423828125,
+        "delta_MiB": 0.96484375
+      },
+      "Anonymous": {
+        "first_0_to_30m_median_MiB": 7.77734375,
+        "last_30m_median_MiB": 8.82421875,
+        "delta_MiB": 1.046875
+      },
+      "cgroup_anon": {
+        "first_0_to_30m_median_MiB": 7.77734375,
+        "last_30m_median_MiB": 8.82421875,
+        "delta_MiB": 1.046875
+      }
+    },
+    "imx462-rtsp-server.service": {
+      "Rss": {
+        "first_0_to_30m_median_MiB": 45.287109375,
+        "last_30m_median_MiB": 47.47265625,
+        "delta_MiB": 2.185546875
+      },
+      "Pss": {
+        "first_0_to_30m_median_MiB": 45.283203125,
+        "last_30m_median_MiB": 47.46875,
+        "delta_MiB": 2.185546875
+      },
+      "Anonymous": {
+        "first_0_to_30m_median_MiB": 22.158203125,
+        "last_30m_median_MiB": 24.08203125,
+        "delta_MiB": 1.923828125
+      },
+      "cgroup_anon": {
+        "first_0_to_30m_median_MiB": 22.158203125,
+        "last_30m_median_MiB": 24.08203125,
+        "delta_MiB": 1.923828125
+      }
+    },
+    "cam-service.service": {
+      "Rss": {
+        "first_0_to_30m_median_MiB": 12.33203125,
+        "last_30m_median_MiB": 12.33203125,
+        "delta_MiB": 0.0
+      },
+      "Pss": {
+        "first_0_to_30m_median_MiB": 10.8095703125,
+        "last_30m_median_MiB": 10.7822265625,
+        "delta_MiB": -0.02734375
+      },
+      "Anonymous": {
+        "first_0_to_30m_median_MiB": 6.49609375,
+        "last_30m_median_MiB": 6.49609375,
+        "delta_MiB": 0.0
+      },
+      "cgroup_anon": {
+        "first_0_to_30m_median_MiB": 6.49609375,
+        "last_30m_median_MiB": 6.49609375,
+        "delta_MiB": 0.0
+      }
+    },
+    "imx462-health.service": {
+      "Rss": {
+        "first_0_to_30m_median_MiB": 18.5234375,
+        "last_30m_median_MiB": 19.5078125,
+        "delta_MiB": 0.984375
+      },
+      "Pss": {
+        "first_0_to_30m_median_MiB": 11.1728515625,
+        "last_30m_median_MiB": 11.8505859375,
+        "delta_MiB": 0.677734375
+      },
+      "Anonymous": {
+        "first_0_to_30m_median_MiB": 9.6484375,
+        "last_30m_median_MiB": 10.6328125,
+        "delta_MiB": 0.984375
+      },
+      "cgroup_anon": {
+        "first_0_to_30m_median_MiB": 9.6484375,
+        "last_30m_median_MiB": 10.6328125,
+        "delta_MiB": 0.984375
+      }
+    }
+  },
+  "color_quality": "Not validated; last image had a purple tint; investigation deferred",
+  "limitations": [
+    "No claim for all RTSP clients, multiple tracks, other SDKs or physical power cycling",
+    "No proof that every possible memory leak is absent",
+    "No decoding claim for reference-less P frames before the first complete IDR",
+    "Cancelled 24-hour request is not included"
+  ]
+}

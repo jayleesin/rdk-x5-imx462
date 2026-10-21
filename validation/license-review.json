@@ -1,0 +1,151 @@
+{
+  "checked_utc": "2026-10-21T00:10:52.941081+00:00",
+  "decision": "PUBLIC_SOURCE_ONLY",
+  "vendor_permission_request_sent": false,
+  "repositories": [
+    {
+      "repo": "x5-tuning-json",
+      "commit": "96cdd39ecb485ee725d5d40601a8d3b834674b4b",
+      "url": "https://github.com/D-Robotics/x5-tuning-json",
+      "github_detected_license": null,
+      "tree_truncated": false,
+      "notice_paths": []
+    },
+    {
+      "repo": "x5-libcam-inc",
+      "commit": "52bbff4cc77ccdff1182c710590ba17dddd6ee73",
+      "url": "https://github.com/D-Robotics/x5-libcam-inc",
+      "github_detected_license": null,
+      "tree_truncated": false,
+      "notice_paths": []
+    },
+    {
+      "repo": "x5-multimedia-samples",
+      "commit": "0d9925cef6c41056525ae27383d2d3604f9e4690",
+      "url": "https://github.com/D-Robotics/x5-multimedia-samples",
+      "github_detected_license": null,
+      "tree_truncated": false,
+      "notice_paths": [
+        "chip_base_test/08_cpu_performance/coremark-main/LICENSE.md",
+        "sunrise_camera/Transport/websocket/handle/src/LICENSE",
+        "sunrise_camera/WebServer/www/js/wasm_video_player/LICENSE"
+      ]
+    },
+    {
+      "repo": "x5-hobot-camera",
+      "commit": "c223d45a40deff1c6f9547a38882b0a13cd4f80c",
+      "url": "https://github.com/D-Robotics/x5-hobot-camera",
+      "github_detected_license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "tree_truncated": false,
+      "notice_paths": [
+        "LICENSE",
+        "debian/etc/control-tool/content/licence.html"
+      ]
+    },
+    {
+      "repo": "x5-hobot-multimedia",
+      "commit": "0f297df905511c3429567202813359acee26dbb3",
+      "url": "https://github.com/D-Robotics/x5-hobot-multimedia",
+      "github_detected_license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "tree_truncated": false,
+      "notice_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repo": "x5-libcam-sensor",
+      "commit": "8c4159238e5a0db768d273853e4dce0039522cba",
+      "url": "https://github.com/D-Robotics/x5-libcam-sensor",
+      "github_detected_license": null,
+      "tree_truncated": false,
+      "notice_paths": []
+    },
+    {
+      "repo": "x5-hobot-multimedia-dev",
+      "commit": "f625c7fd28a3553f57524c2bc3721a42078af2b7",
+      "url": "https://github.com/D-Robotics/x5-hobot-multimedia-dev",
+      "github_detected_license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "notice_paths": [
+        "LICENSE"
+      ],
+      "root_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repo": "x5-hobot-multimedia-samples",
+      "commit": "db9ccff4d1207aafe067f2a3a771863df7b582d0",
+      "url": "https://github.com/D-Robotics/x5-hobot-multimedia-samples",
+      "github_detected_license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "notice_paths": [
+        "LICENSE"
+      ],
+      "root_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ],
+  "installed_packages": {
+    "hobot-camera": {
+      "package_metadata": "Package: hobot-camera\nStatus: install ok installed\nInstalled-Size: 32251\nMaintainer: developer@d-robotics.cc\nArchitecture: arm64\nVersion: 3.1.1-20260409105913\nDepends: hobot-boot\nDescription: Camera Sensor Support Package\n Git Commit: c223d45a40deff1c6f9547a38882b0a13cd4f80c\n",
+      "copyright_file": "/usr/share/doc/hobot-camera/copyright",
+      "copyright_file_sha256": "afa0972ac2d06e746c58f53ca988f80c740b9b8899fdf8083b3fb3aabf6d8dd2",
+      "license_field_present": false,
+      "finding": "Copyright holder stated, no License field or redistribution terms in the package copyright file."
+    },
+    "hobot-multimedia": {
+      "package_metadata": "Package: hobot-multimedia\nStatus: install ok installed\nInstalled-Size: 77526\nMaintainer: developer@d-robotics.cc\nArchitecture: arm64\nVersion: 3.0.5-20260409105737\nDepends: hobot-boot\nDescription: Multimedia Support Package\n Git Commit: 0f297df905511c3429567202813359acee26dbb3\n",
+      "copyright_file": "/usr/share/doc/hobot-multimedia/copyright",
+      "copyright_file_sha256": "afa0972ac2d06e746c58f53ca988f80c740b9b8899fdf8083b3fb3aabf6d8dd2",
+      "license_field_present": false,
+      "finding": "Copyright holder stated, no License field or redistribution terms in the package copyright file."
+    },
+    "hobot-multimedia-samples": {
+      "package_metadata": "Package: hobot-multimedia-samples\nStatus: install ok installed\nInstalled-Size: 210648\nMaintainer: developer@d-robotics.cc\nArchitecture: arm64\nVersion: 3.1.1-20260409110018\nDepends: hobot-multimedia-dev, hobot-multimedia\nDescription: Example of Multimedia\n Git Commit: db9ccff4d1207aafe067f2a3a771863df7b582d0\n",
+      "copyright_file": "/usr/share/doc/hobot-multimedia-samples/copyright",
+      "copyright_file_sha256": "afa0972ac2d06e746c58f53ca988f80c740b9b8899fdf8083b3fb3aabf6d8dd2",
+      "license_field_present": false,
+      "finding": "Copyright holder stated, no License field or redistribution terms in the package copyright file."
+    },
+    "hobot-configs": {
+      "package_metadata": "Package: hobot-configs\nStatus: install ok installed\nInstalled-Size: 1048\nMaintainer: developer@d-robotics.cc\nArchitecture: arm64\nVersion: 3.1.4-20260409105753\nDepends: hobot-boot, udisks2\nDescription: Hobot custom system configuration\n Git Commit: 89189ee38deb569e93bc8ee845a93c557255031c\n",
+      "copyright_file": "/usr/share/doc/hobot-configs/copyright",
+      "copyright_file_sha256": "afa0972ac2d06e746c58f53ca988f80c740b9b8899fdf8083b3fb3aabf6d8dd2",
+      "license_field_present": false,
+      "finding": "Copyright holder stated, no License field or redistribution terms in the package copyright file."
+    }
+  },
+  "findings": [
+    "Apache-2.0 exists in packaging/runtime repositories. This updates the earlier incomplete review.",
+    "The exact tuning JSON, vp_sensors example and libcam-inc headers are not present in those corresponding packaging trees; no explicit extension of their root licenses to the separate source repositories was found.",
+    "The libcam-inc header contains a Horizon Robotics copyright and an all-rights-reserved notice; inline helpers are used during compilation.",
+    "GPL-2.0-only source remains separately distributable with the required notices. Do not treat this as approval of a linked SDK binary.",
+    "The prebuilt plugin, vendor JSON and vendor-derived C template are absent from this public edition and from its fresh Git object database."
+  ],
+  "policy_sources": [
+    "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "https://apache.org/licenses/GPL-compatibility.html",
+    "https://www.apache.org/licenses/LICENSE-2.0",
+    "https://raw.githubusercontent.com/raspberrypi/linux/359f37f0faefb712add32a39f98751aea67d5c1f/LICENSES/preferred/GPL-2.0"
+  ]
+}
